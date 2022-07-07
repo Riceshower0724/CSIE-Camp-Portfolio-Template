@@ -15,6 +15,7 @@ defineProps({
         <h1 class="text-2xl">Name: {{ name }}</h1>
         Description: {{ description }}<br />
         Image: {{ image }}<br />
+        <img :src="image" />
         Link: {{ link }}<br />
         <Typing :text="tags.join(' / ')" />
     </div>
